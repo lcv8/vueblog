@@ -21,10 +21,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
     @Autowired
-    private UserService userService;
+    UserService userService;
 
     @GetMapping("/index")
     public Object test(Long id){
-        return userService.getById(1l);
+        return userService.getById(1L);
     }
 }
